@@ -7,10 +7,15 @@
   <body>
     <div id="pageContainer">
       <div id="outputPane" style="position: relative;">
-        <a id="copyCode" href="#" title="Скопировать код"
-          style="position: absolute; top: 8px; right: 24px; z-index: 10;">
-          <img src="./static/media/copy.png" alt="Copy" style="width: 24px; height: 24px;">
+        <div class="buttonPanel">
+          <div>
+            <button id="langRu" class="lang-btn active">RU</button>
+            <button id="langEn" class="lang-btn">EN</button>
+          </div>
+          <a id="copyCode" href="#" title="Скопировать код">
+          <img src="./static/media/copy.png" alt="Copy" id="#copyImg">
         </a>
+        </div>
         <pre id="generatedCode"><code></code></pre>
         <div id="output"></div>
       </div>

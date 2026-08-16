@@ -26,7 +26,7 @@ code {
   flex-direction: column;
   width: 400px;
   flex: 0 0 400px;
-  overflow: auto;
+  height: 95%;
   margin: 1rem;
   background-color: rgb(247, 240, 228);
 }
@@ -39,13 +39,51 @@ code {
 }
 
 #generatedCode {
-  height: 50%;
-  background-color: rgb(247, 240, 228);
+  height: 90vh;
   margin: 0.5rem;
   padding: 0.5rem;
+  overflow: auto;
+  background-color: rgb(247, 240, 228);
   border: 1px dashed black;
 }
 
-#output {
-  height: 50%;
+#copyCode {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#copyImg {
+  width: 24px;
+  height: 24px;
+}
+
+.buttonPanel {
+  padding: 8px 8px 0px 8px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.lang-btn {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.lang-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+#copyCode {
+  z-index: 10;
 }

@@ -1,4 +1,5 @@
 import * as Blockly from 'blockly';
+import { colour } from 'blockly/blocks';
 
 export const toolbox = {
   kind: 'categoryToolbox',
@@ -14,7 +15,7 @@ export const toolbox = {
         },
         {
           kind: 'block',
-          type: 'print_number_on_brain_screen_block',
+          type: 'print_value_on_brain_screen_block',
         },
         {
           kind: 'block',
@@ -79,7 +80,7 @@ export const toolbox = {
     },
     {
       kind: "category",
-      name: '%{BKY_CATEGORY_SENSING}',
+      name: '%{BKY_CATEGORY_BRAIN_SENSING}',
       colour: '60',
       contents: [
         {
@@ -125,6 +126,261 @@ export const toolbox = {
         {
           kind: 'block',
           type: 'is_gyro_calibrating_block',
+        },
+      ]
+    },
+    {
+      "kind": "category",
+      "name": '%{BKY_CATEGORY_CONTROLLER}',
+      "colour": 210,
+      "contents": [
+        { "kind": "block", "type": "create_controller_block" },
+        { "kind": "block", "type": "controller_remote_enabled_block" },
+        { "kind": "block", "type": "controller_button_pressing_block" },
+        { "kind": "block", "type": "controller_axis_position_block" },
+        { "kind": "block", "type": "controller_button_pressed_handler" },
+        { "kind": "block", "type": "controller_button_released_handler" },
+        { "kind": "block", "type": "controller_axis_changed_handler" }
+      ]
+    },
+    {
+      kind: "category",
+      name: '%{BKY_CATEGORY_TOUCH_SENSING}',
+      colour: '150',
+      contents: [
+        {
+          kind: 'block',
+          type: 'create_bumper_block'
+        },
+        {
+          kind: 'block',
+          type: 'bumper_pressed_block'
+        },
+        {
+          kind: 'block',
+          type: 'bumper_pressed_handler'
+        },
+        {
+          kind: 'block',
+          type: 'bumper_released_handler'
+        },
+        {
+          kind: 'block',
+          type: 'create_touch_led_block'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_pressed_block'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_set_color_block'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_set_brightness_block'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_pressed_handler'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_released_handler'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_set_blink_block'
+        },
+        {
+          kind: 'block',
+          type: 'touch_led_stop_blink_block'
+        },
+      ]
+    },
+    {
+      kind: "category",
+      name: '%{BKY_CATEGORY_OPTICAL_SENSING}',
+      colour: '0',
+      contents: [        
+        {
+          kind: 'block',
+          type: 'create_color_sensor_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_object_detected_handler'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_set_light_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_set_light_power_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_is_near_object_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_color_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_brightness_block'
+        },
+        {
+          kind: 'block',
+          type: 'color_sensor_hue_block'
+        },
+        {
+          kind: 'block',
+          type: 'create_distance_sensor_block'
+        },
+        {
+          kind: 'block',
+          type: 'distance_is_object_detected_block'
+        },
+        {
+          kind: 'block',
+          type: 'distance_object_distance_block'
+        },
+        {
+          kind: 'block',
+          type: 'distance_object_velocity_block'
+        }, 
+        {
+          kind: 'block',
+          type: 'create_optical_sensor_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_set_light_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_set_light_power_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_object_detect_threshold_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_is_near_object_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_color_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_brightness_block'
+        },  
+        {
+          kind: 'block',
+          type: 'optical_hue_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_rgb_block'
+        },
+        {
+          kind: 'block',
+          type: 'optical_object_detected_handler'
+        },  
+        {
+          kind: 'block',
+          type: 'optical_object_lost_handler'
+        },        
+             
+      ]
+    },
+    {
+      kind: 'category',
+      name: '%{BKY_CATEGORY_MOVEMENT}',
+      colour: '240',
+      contents: [
+        {
+          kind: 'block',
+          type: 'create_motor_block',
+        },
+        {
+          kind: 'block',
+          type: 'create_motor_group_from_list',
+        },
+        {
+          kind: 'block',
+          type: 'spin_block',
+        },
+        {
+          kind: 'block',
+          type: 'spin_for_block',
+        },
+        {
+          kind: 'block',
+          type: 'spin_to_position_block',
+        },
+        {
+          kind: 'block',
+          type: 'stop_motor_block',
+        },
+        {
+          kind: 'block',
+          type: 'create_drivetrain_block',
+        },
+        {
+          kind: 'block',
+          type: 'create_smart_drive_block',
+        },
+        {
+          kind: 'block',
+          type: 'drive_block',
+        },
+        {
+          kind: 'block',
+          type: 'drive_for_block',
+        },
+        {
+          kind: 'block',
+          type: 'turn_block',
+        },
+        {
+          kind: 'block',
+          type: 'turn_for_block',
+        },
+        {
+          kind: 'block',
+          type: 'stop_drivetrain_block',
+        },
+      ]
+    },
+    {
+      kind: 'category',
+      name: '%{BKY_CATEGORY_PNEUMATIC}',
+      colour: '300',
+      contents: [
+        {
+          kind: 'block',
+          type: 'create_pneumatic_block',
+        },
+        {
+          kind: 'block',
+          type: 'pneumatic_pump_on_block',
+        },
+        {
+          kind: 'block',
+          type: 'pneumatic_pump_off_block',
+        },
+        {
+          kind: 'block',
+          type: 'pneumatic_extend_block',
+        },
+        {
+          kind: 'block',
+          type: 'pneumatic_retract_block',
         },
       ]
     },
@@ -583,10 +839,6 @@ export const toolbox = {
       name: '%{BKY_CATEGORY_LISTS}',
       categorystyle: 'list_category',
       contents: [
-        {
-          kind: 'block',
-          type: 'lists_create_with',
-        },
         {
           kind: 'block',
           type: 'lists_create_with',
