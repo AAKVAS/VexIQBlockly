@@ -8,7 +8,7 @@ Visual block-based programming tool for *VEX IQ 2 Generation* robots.
 
 **VexIQBlockly** is a tool that lets you program *VEX IQ 2 Gen* robots using visual blocks. You assemble your program in the browser, and VexIQBlockly automatically translates it into *Python* code. You can then copy the generated code, paste it into Visual Studio Code, and upload it to your robot.
 
-![alt text](image.png)
+<img width="986" height="625" alt="image" src="https://github.com/user-attachments/assets/06243f49-36e4-4681-ada0-874c6a1fd77f" />
 
 The tool was created for teachers and students who are just starting their journey into robotics. Blocks help you understand the logic of robot behavior without getting distracted by programming language syntax.
 
