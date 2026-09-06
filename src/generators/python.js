@@ -196,7 +196,7 @@ forBlock['turn_for_block'] = function(block, generator) {
 
 forBlock['create_motor_block'] = function(block, generator) {
   const port = block.getFieldValue('PORT');
-  const reverse = block.getFieldValue('REVERSE') === 'TRUE';
+  const reverse = block.getFieldValue('REVERSE') === 'TRUE' ? 'True' : 'False';
   return [`Motor(${port}, 1.0, ${reverse})`, Order.ATOMIC];
 };
 
