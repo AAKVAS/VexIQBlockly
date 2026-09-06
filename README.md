@@ -28,6 +28,10 @@ The project is built on top of [Google Blockly](https://developers.google.com/bl
   - Pneumatics
 - Save your projects in the browser (even after refreshing or closing the page).
 
+## Try it Online
+You can use VexIQBlockly directly in your browser without any installation:
+**[https://aakvas.github.io/VexIQBlockly/](https://aakvas.github.io/VexIQBlockly/)**
+
 ## Quick Start
 
 Everything you need to start working with VexIQBlockly:
