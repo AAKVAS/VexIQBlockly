@@ -1,46 +1,49 @@
+[Русский](README_ru.md)
+
 # VexIQBlockly
 
-Визуальный конструктор программ для роботов *VEX IQ 2 Generation*.
+Visual block-based programming tool for *VEX IQ 2 Generation* robots.
 
-## О проекте
+## About
 
-**VexIQBlockly** — это инструмент, который позволяет программировать роботов *VEX IQ 2 Gen* с помощью визуальных блоков, как из кубиков. Вы собираете программу в браузере, а VexIQBlockly автоматически превращает её в код на языке *Python*. Готовый код можно скопировать и вставить в Visual Studio Code, а затем загрузить на робота.
+**VexIQBlockly** is a tool that lets you program *VEX IQ 2 Gen* robots using visual blocks. You assemble your program in the browser, and VexIQBlockly automatically translates it into *Python* code. You can then copy the generated code, paste it into Visual Studio Code, and upload it to your robot.
 
 ![alt text](image.png)
 
-Инструмент создавался для учителей и учеников, которые только начинают знакомиться с робототехникой. Блоки помогают понять логику работы робота, не отвлекаясь на синтаксис языка.
+The tool was created for teachers and students who are just starting their journey into robotics. Blocks help you understand the logic of robot behavior without getting distracted by programming language syntax.
 
-Проект построен на основе [Google Blockly](https://www.blockly.com/) и использует стандартный шаблон Blockly Sample App.
+The project is built on top of [Google Blockly](https://developers.google.com/blockly) and uses the standard Blockly Sample App template.
 
-## Возможности
-- Собирать программы из визуальных блоков в браузере.
-- Автоматически переводить блоки в код Python.
-- Работать с основными компонентами VEX IQ 2 Gen:
-    - Экран (вывод текста и изображений).
-    - Звук (ноты и сигналы).
-    - Датчики платы (кнопки, аккумулятор, гироскоп).
-    - Управление с контроллера.
-    - Датчики касаний (бампер, сенсор касания).
-    - Оптические датчики.
-    - Движение (моторы и шасси).
-    - Пневматика.
-- Сохранять ваши проекты в браузере (даже после перезагрузки страницы).
+## Features
+- Build programs using visual blocks in the browser.
+- Automatically generate Python code from blocks.
+- Work with all major VEX IQ 2 Gen components:
+  - Screen (display text and images)
+  - Sound (notes and alert signals)
+  - Brain sensors (buttons, battery, gyroscope)
+  - Controller (remote control)
+  - Touch sensors (bumper, touch sensor)
+  - Optical sensors
+  - Movement (motors and drivetrain)
+  - Pneumatics
+- Save your projects in the browser (even after refreshing or closing the page).
 
-## Быстрый старт
-Всё, что нужно, чтобы начать работать с VexIQBlockly:
-1. Убедитесь, что у вас установлен Node.js (он нужен для работы инструмента).
-2. Скачайте или склонируйте этот репозиторий.
-3. Откройте терминал в папке с проектом и выполните команду:
+## Quick Start
+
+Everything you need to start working with VexIQBlockly:
+
+1. Make sure you have **Node.js** installed (it's required to run the tool).
+2. Download or clone this repository.
+3. Open a terminal in the project folder and run:
 ```bash
 npm install
 ```
-4. Запустите локальный сервер:
+4. Start the local development server:
 ```bash
 npm run start
 ```
-5. Дождитесь запуска сервера. В браузере автоматически откроется страница конструктора блоков по адресу http://localhost:8081/.
+5. Wait for the server to start. A browser window will automatically open with the block builder at http://localhost:8081/.
 
-## Лицензия
-
-Проект распространяется под лицензией MIT. Подробнее — в файле LICENSE.
+## License
+This project is distributed under the MIT License. See the LICENSE file for details.
 
